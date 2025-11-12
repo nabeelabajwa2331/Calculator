@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(229, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.calculator {
+  background-color: #1C1F2B;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 90px 0;
+  padding-bottom: 30px;
+  position: relative;
+  padding-top: 30px;
+
+}
+
+input {
+  background: transparent;
+  color: white;
+  font-size: 2.8em;
+  text-align: right;
+  padding: 20px 10px;
+  overflow: hidden;
+  word-wrap: break-word;
+  width: -webkit-fill-available;
+  border: none;
+  margin-right: 15px;
+}
+input:focus{
+  outline: none;
+} 
+#historyBtn {
+   
+    background-color: #3A3E4A;
+    color: white;
+    font-size: 0.9em;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 15px;
+
+}
+#historyBtn:focus{
+  outline: none;
+}
+
+
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn {
+  height: 70px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.number {
+  background-color: #3A3E4A;
+}
+
+.function {
+  background-color: #6B707C;
+}
+
+.operator {
+  background-color: #F79A29;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 450px) {
+  .calculator {
+    width: 90%;
+  }
+  .input {
+    font-size: 2em;
+    padding: 20px 10px;
+  }
+  .btn {
+    height: 60px;
+    font-size: 1.2em;
+  }
+  .Buttons {
+    gap: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
