@@ -80,7 +80,7 @@ const buttons = document.querySelectorAll(".btn:not(#historyBtn)");
 const historyBtn = document.getElementById("historyBtn");
 let history = [];
 
-// Access the buttons
+
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         const value = btn.textContent;
